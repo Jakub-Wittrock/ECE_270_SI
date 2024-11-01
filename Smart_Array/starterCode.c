@@ -10,14 +10,14 @@
 struct IntArray
 {
 	int* x;
-	int currentIndex;
+	int n;
 	int maxCapacity;
 };
 
 struct FloatArray
 {
 	int* x;
-	int currentIndex;
+	int n;
 	int maxCapacity;
 };
 
