@@ -16,7 +16,7 @@ struct IntArray
 
 struct FloatArray
 {
-	int* x;
+	float* x;
 	int currentIndex;
 	int maxCapacity;
 };
