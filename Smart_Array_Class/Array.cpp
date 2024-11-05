@@ -26,8 +26,9 @@ void Array::getUniformSamples(float min, float max, float step)
 {
 
 }
-void Array::getRandomArray(int n)
+void Array::getRandomArray(int n, float min, float max)
 {
+//min + ((float) rand() / (float) RAND_MAX) * (max - min + 1);
 
 }
 
