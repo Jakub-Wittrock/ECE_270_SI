@@ -17,7 +17,7 @@ void bubbleSort(int n, int* arr);
 void swap(int* a, int* b);
 void bubbleSort(int n, int* arr, char direction);
 
-void bubbleSort(int n, char* str);
+void bubbleSort(string *s);
 void swap(char* a, char* b);
 
 int main()
@@ -26,6 +26,8 @@ int main()
 
 	string dna = getRandDna(30);
 
+	cout << endl << "DNA: " << dna;
+	bubbleSort(&dna);
 	cout << endl << "DNA: " << dna;
 }
 
@@ -150,15 +152,15 @@ string hideCharacter(string dna, char target)
 
 
 
-void bubbleSort(int n, char*str)
+void bubbleSort(string *s)
 {
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < s->length(); i++)
 	{
-		for (int j = 1; j < n; j++)
+		for (int j = 1; j < s->length(); j++)
 		{
-			if (str[j] < str[j - 1])
+			if ((*s)[j] < (*s)[j - 1])
 			{
-				swap(&str[j], &str[j - 1]);
+				swap((*s)[j], (*s)[j - 1]);
 			}
 		}
 	}
