@@ -34,7 +34,7 @@ public:
 	void setName(string name);
 
 	void getUniformSamples(float min, float max, float step);
-	void getRandomArray(int n);
+	void getRandomArray(int n, float min, float max);
 
 	void append(int n, float* origin);
 	void append(Array origin);
