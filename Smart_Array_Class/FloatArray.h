@@ -3,8 +3,9 @@
 using namespace std;
 
 
-class Array
+class FloatArray
 {
+
 	//-------------------------------------------
 	//Member Variables
 	//-------------------------------------------
@@ -26,9 +27,9 @@ private:
 public:
 
 	//Constructors
-	Array();
-	Array(int maxElements);
-	Array(float* arr_in, int numel_in, int maxElements_in);
+	FloatArray();
+	FloatArray(int maxElements);
+	FloatArray(float* arr_in, int numel_in, int maxElements_in);
 
 	//Set Methods
 	void setName(string name);
@@ -37,7 +38,7 @@ public:
 	void getRandomArray(int n, float min, float max);
 
 	void append(int n, float* origin);
-	void append(Array origin);
+	void append(FloatArray origin);
 
 	void insertNewElement(float value);
 	void deleteLastElement();
@@ -73,9 +74,9 @@ public:
 	int find(float target);
 
 	int countValuesInRange(float min, float max);
-	Array getValuesInRange(float min, float max);
+	FloatArray getValuesInRange(float min, float max);
 
-	float dotProduct(Array other);
+	float dotProduct(FloatArray other);
 
 
 private:
@@ -84,4 +85,3 @@ private:
 	void map(float inMin, float outMin, float inMax, float outMax);
 
 };
-
